@@ -1,7 +1,13 @@
-// Зеркало открытой веб-версии канала «Тарковское Метадвижение» (t.me/s/metadvij) для тех, у кого Telegram заблокирован.
+// Зеркало открытых веб-версий каналов для тех, у кого Telegram заблокирован:
+//   «Тарковское Метадвижение» (t.me/s/metadvij) → feed/feed.json — русская версия оверлея XT;
+//   «Escape from Tarkov Official» (t.me/s/escapefromtarkovEN, официальный канал BSG) → feed/feed_en.json — английская версия.
 // Берётся только то, что оверлей XT и так показывает: заголовок поста, дата, ссылка, промокоды. Запускает .github/workflows/tgfeed.yml.
+// Разбор — копия tgParse из app/main.js оверлея: поменяли там — поменять и здесь.
 import fs from 'node:fs';
-const TG_CHANNEL = 'metadvij';
+const CHANNELS = [
+  { channel: 'metadvij', name: 'Тарковское Метадвижение', out: 'feed/feed.json' },
+  { channel: 'escapefromtarkovEN', name: 'Escape from Tarkov Official', out: 'feed/feed_en.json' }
+];
 function tgParse(html) {
   const dec = s => s.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, '').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ').replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n)).replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16))).replace(/&amp;/g, '&');
   const posts = [];
@@ -14,20 +20,30 @@ function tgParse(html) {
     const cut = title.search(/[.!?…](\s|$)|\s{2,}/); if (cut > 20) title = title.slice(0, cut + 1).replace(/\s+$/, '');
     if (title.length > 110) title = title.slice(0, 108).replace(/\s+\S*$/, '') + '…';
     const codes = [];
-    if (/промо ?код/i.test(txt)) for (const ln of lines) {
+    // промокоды: в русском канале — строка с кодом после 🎁 в посте со словом «промокод»; в английском — «promo code», «use code XXX», «redeem»
+    const okCode = c => c && /[A-Z]/.test(c) && !/^(EFT|PVE|PVP|BSG|ARENA|TWITCH|EXFIL|USEC|BEAR)$/.test(c) && !codes.some(x => x.code === c);
+    if (/промо ?код|promo ?code|\bcode\b|redeem/i.test(txt)) for (const ln of lines) {
       const c = /^(?:🎁|🎉|🔑|▪️|•|-)?\s*([A-Z0-9][A-Z0-9_-]{4,30})\b\s*(?:[—–-]\s*(.+))?$/u.exec(ln.replace(/^🎁\s*/u, ''));
-      if (c && /[A-Z]/.test(c[1]) && !/^(EFT|PVE|PVP|BSG)$/.test(c[1])) codes.push({ code: c[1], note: (c[2] || '').slice(0, 60) });
+      if (c && okCode(c[1])) codes.push({ code: c[1], note: (c[2] || '').slice(0, 60) });
+      else for (const k of ln.matchAll(/(?:promo ?code|\bcode|redeem|промо ?код)\s*[:\-—–]?\s*[«"“']?([A-Z0-9][A-Z0-9_-]{4,30})\b/giu))
+        if (okCode(k[1]) && k[1] === k[1].toUpperCase()) codes.push({ code: k[1], note: (/\b(PvE|PvP)\b/i.exec(ln) || [''])[0] });
     }
     posts.push({ id: m[1], url: 'https://t.me/' + m[1], date: m[3], title, codes });
   }
   return posts.reverse(); // новые сверху
 }
 
-const r = await fetch('https://t.me/s/' + TG_CHANNEL, { headers: { 'User-Agent': 'Mozilla/5.0 xt-tarkov-overlay-feed' }, signal: AbortSignal.timeout(20000) });
-if (!r.ok) throw new Error('HTTP ' + r.status);
-const posts = tgParse(await r.text());
-if (!posts.length) throw new Error('постов не найдено — разметка t.me изменилась?');
-const out = 'feed/feed.json', old = fs.existsSync(out) ? JSON.parse(fs.readFileSync(out, 'utf8')) : null;
-if (old && JSON.stringify(old.posts) === JSON.stringify(posts)) { console.log('без изменений'); process.exit(0); }
-fs.writeFileSync(out, JSON.stringify({ t: Date.now(), channel: TG_CHANNEL, name: 'Тарковское Метадвижение', posts }, null, 1) + '\n');
-console.log('постов', posts.length);
+let fails = 0;
+for (const C of CHANNELS) {
+  try {
+    const r = await fetch('https://t.me/s/' + C.channel, { headers: { 'User-Agent': 'Mozilla/5.0 xt-tarkov-overlay-feed' }, signal: AbortSignal.timeout(20000) });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const posts = tgParse(await r.text());
+    if (!posts.length) throw new Error('постов не найдено — разметка t.me изменилась?');
+    const old = fs.existsSync(C.out) ? JSON.parse(fs.readFileSync(C.out, 'utf8')) : null;
+    if (old && JSON.stringify(old.posts) === JSON.stringify(posts)) { console.log(C.channel, 'без изменений'); continue; }
+    fs.writeFileSync(C.out, JSON.stringify({ t: Date.now(), channel: C.channel, name: C.name, posts }, null, 1) + '\n');
+    console.log(C.channel, 'постов', posts.length);
+  } catch (e) { fails++; console.error(C.channel, e.message || e); }
+}
+if (fails === CHANNELS.length) process.exit(1);
