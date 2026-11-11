@@ -1,8 +1,15 @@
 {
- "t": 1794389403356,
+ "t": 1794409163856,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/6985",
+   "url": "https://t.me/escapefromtarkovEN/6985",
+   "date": "2026-11-11T14:00:45+00:00",
+   "title": "The Kord Breach season will conclude on December 7.",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/6984",
    "url": "https://t.me/escapefromtarkovEN/6984",
@@ -120,13 +127,6 @@
    "url": "https://t.me/escapefromtarkovEN/6966",
    "date": "2026-11-05T14:00:48+00:00",
    "title": "Autumn has arrived in Tarkov - time to layer up.",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6965",
-   "url": "https://t.me/escapefromtarkovEN/6965",
-   "date": "2026-11-05T10:08:15+00:00",
-   "title": "The patch 0.6.2.5 installation in #TarkovArena is complete.",
    "codes": []
   }
  ]
