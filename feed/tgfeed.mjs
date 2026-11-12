@@ -22,7 +22,11 @@ function tgParse(html) {
     const codes = [];
     // промокоды: в русском канале — строка с кодом после 🎁 в посте со словом «промокод»; в английском — «promo code», «use code XXX», «redeem»
     const okCode = c => c && /[A-Z]/.test(c) && !/^(EFT|PVE|PVP|BSG|ARENA|TWITCH|EXFIL|USEC|BEAR)$/.test(c) && !codes.some(x => x.code === c);
-    if (/промо ?код|promo ?code|\bcode\b|redeem/i.test(txt)) for (const ln of lines) {
+    // реклама чужих магазинов и игр («промокод на скидку в GGSel») - не игровые коды: такие посты пропускаем,
+    // а код ищем только в постах про саму игру (12.11.2026: в ленту попал код скидки на ключи Fragmentary Order)
+    const ad = /GGSel|Playerok|Plati\.?market|скидк|при покупке|ключ[иа]? активации|#реклама|\berid\b|discount|sponsored/i.test(txt);
+    const game = /Тарков|Tarkov|\bEFT\b|\bPvE\b|\bPvP\b|Battlestate|\bBSG\b|лаунчер|launcher/i.test(txt);
+    if (!ad && game && /промо ?код|promo ?code|\bcode\b|redeem/i.test(txt)) for (const ln of lines) {
       const c = /^(?:🎁|🎉|🔑|▪️|•|-)?\s*([A-Z0-9][A-Z0-9_-]{4,30})\b\s*(?:[—–-]\s*(.+))?$/u.exec(ln.replace(/^🎁\s*/u, ''));
       if (c && okCode(c[1])) codes.push({ code: c[1], note: (c[2] || '').slice(0, 60) });
       else for (const k of ln.matchAll(/(?:promo ?code|\bcode|redeem|промо ?код)\s*[:\-—–]?\s*[«"“']?([A-Z0-9][A-Z0-9_-]{4,30})\b/giu))
