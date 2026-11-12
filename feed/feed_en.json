@@ -1,8 +1,15 @@
 {
- "t": 1794497438643,
+ "t": 1794507921165,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/6990",
+   "url": "https://t.me/escapefromtarkovEN/6990",
+   "date": "2026-11-12T17:44:46+00:00",
+   "title": "If you haven’t completed the Kord Breach task line yet, now is the time.",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/6988",
    "url": "https://t.me/escapefromtarkovEN/6988",
@@ -127,13 +134,6 @@
    "url": "https://t.me/escapefromtarkovEN/6970",
    "date": "2026-11-06T15:00:37+00:00",
    "title": "The Halloween celebrations continue — tune in to streams and claim your rewards!",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6969",
-   "url": "https://t.me/escapefromtarkovEN/6969",
-   "date": "2026-11-06T13:00:29+00:00",
-   "title": "An unknown virus has destabilized the Norvinsk region.",
    "codes": []
   }
  ]
