@@ -1,5 +1,5 @@
 {
- "t": 1794592316718,
+ "t": 1794602791684,
  "channel": "metadvij",
  "name": "Тарковское Метадвижение",
  "posts": [
@@ -44,6 +44,74 @@
    "date": "2026-11-11T15:07:18+00:00",
    "title": "EscapefromTarkov",
    "codes": []
+  },
+  {
+   "id": "metadvij/5304",
+   "url": "https://t.me/metadvij/5304",
+   "date": "2026-11-06T16:52:15+00:00",
+   "title": "Новые промокоды от большого босса",
+   "codes": [
+    {
+     "code": "EMBRACEPAIN",
+     "note": "PvP и PvP Season"
+    },
+    {
+     "code": "PLAYYOURWAY",
+     "note": "PvE-режим"
+    }
+   ]
+  },
+  {
+   "id": "metadvij/5302",
+   "url": "https://t.me/metadvij/5302",
+   "date": "2026-11-05T11:15:48+00:00",
+   "title": "Новый промокод в Таркове",
+   "codes": [
+    {
+     "code": "TARKOVHALLOWEEN",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "metadvij/5285",
+   "url": "https://t.me/metadvij/5285",
+   "date": "2026-10-30T13:42:53+00:00",
+   "title": "Новый Хэллоуинский промокод",
+   "codes": [
+    {
+     "code": "UNDEADTARKOV",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "metadvij/5204",
+   "url": "https://t.me/metadvij/5204",
+   "date": "2026-10-08T06:42:28+00:00",
+   "title": "Промокод на Таркоины",
+   "codes": [
+    {
+     "code": "JUST150TARCOINS",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "metadvij/5199",
+   "url": "https://t.me/metadvij/5199",
+   "date": "2026-10-06T15:12:28+00:00",
+   "title": "Два промокода со снаряжением Black Division",
+   "codes": [
+    {
+     "code": "POLYGON",
+     "note": ""
+    },
+    {
+     "code": "AUTOMATON",
+     "note": ""
+    }
+   ]
   }
  ]
 }
