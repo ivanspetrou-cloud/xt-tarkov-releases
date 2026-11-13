@@ -5,8 +5,8 @@
 // Разбор — копия tgParse из app/main.js оверлея: поменяли там — поменять и здесь.
 import fs from 'node:fs';
 const CHANNELS = [
-  { channel: 'metadvij', name: 'Тарковское Метадвижение', out: 'feed/feed.json' },
-  { channel: 'escapefromtarkovEN', name: 'Escape from Tarkov Official', out: 'feed/feed_en.json' }
+  { channel: 'metadvij', name: 'Тарковское Метадвижение', out: 'feed/feed.json', q: 'промокод' },
+  { channel: 'escapefromtarkovEN', name: 'Escape from Tarkov Official', out: 'feed/feed_en.json', q: 'promo code' }
 ];
 function tgParse(html) {
   const dec = s => s.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, '').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ').replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n)).replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16))).replace(/&amp;/g, '&');
@@ -37,13 +37,23 @@ function tgParse(html) {
   return posts.reverse(); // новые сверху
 }
 
+// на странице канала только последние сообщения - старые промокоды берём из поиска канала (?q=), посты с кодами за 60 дней
+function tgMerge(posts, found) {
+  const have = new Set(posts.map(p => p.id)), lim = Date.now() - 60 * 864e5;
+  const add = found.filter(p => (p.codes || []).length && !have.has(p.id) && Date.parse(p.date) > lim);
+  return add.length ? posts.concat(add).sort((a, b) => Date.parse(b.date) - Date.parse(a.date)) : posts;
+}
 let fails = 0;
 for (const C of CHANNELS) {
   try {
     const r = await fetch('https://t.me/s/' + C.channel, { headers: { 'User-Agent': 'Mozilla/5.0 xt-tarkov-overlay-feed' }, signal: AbortSignal.timeout(20000) });
     if (!r.ok) throw new Error('HTTP ' + r.status);
-    const posts = tgParse(await r.text());
+    let posts = tgParse(await r.text());
     if (!posts.length) throw new Error('постов не найдено — разметка t.me изменилась?');
+    try {
+      const q = await fetch('https://t.me/s/' + C.channel + '?q=' + encodeURIComponent(C.q), { headers: { 'User-Agent': 'Mozilla/5.0 xt-tarkov-overlay-feed' }, signal: AbortSignal.timeout(20000) });
+      if (q.ok) posts = tgMerge(posts, tgParse(await q.text()));
+    } catch (e) { console.error(C.channel, 'поиск:', e.message || e); }
     const old = fs.existsSync(C.out) ? JSON.parse(fs.readFileSync(C.out, 'utf8')) : null;
     if (old && JSON.stringify(old.posts) === JSON.stringify(posts)) { console.log(C.channel, 'без изменений'); continue; }
     fs.writeFileSync(C.out, JSON.stringify({ t: Date.now(), channel: C.channel, name: C.name, posts }, null, 1) + '\n');
