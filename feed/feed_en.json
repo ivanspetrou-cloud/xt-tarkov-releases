@@ -1,8 +1,15 @@
 {
- "t": 1794592316920,
+ "t": 1794599747881,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/6994",
+   "url": "https://t.me/escapefromtarkovEN/6994",
+   "date": "2026-11-13T19:27:22+00:00",
+   "title": "We have installed a technical update for #EscapefromTarkov.",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/6993",
    "url": "https://t.me/escapefromtarkovEN/6993",
@@ -127,13 +134,6 @@
    "url": "https://t.me/escapefromtarkovEN/6974",
    "date": "2026-11-07T23:26:40+00:00",
    "title": "And the GROUP A winners are…",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6973",
-   "url": "https://t.me/escapefromtarkovEN/6973",
-   "date": "2026-11-07T16:55:46+00:00",
-   "title": "MINICUP 21: GROUP A starts in just 5 minutes!",
    "codes": []
   }
  ]
