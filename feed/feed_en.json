@@ -1,8 +1,15 @@
 {
- "t": 1794588913472,
+ "t": 1794592316920,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/6993",
+   "url": "https://t.me/escapefromtarkovEN/6993",
+   "date": "2026-11-13T17:23:41+00:00",
+   "title": "The release anniversary of Escape from Tarkov is approaching!",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/6992",
    "url": "https://t.me/escapefromtarkovEN/6992",
@@ -127,13 +134,6 @@
    "url": "https://t.me/escapefromtarkovEN/6973",
    "date": "2026-11-07T16:55:46+00:00",
    "title": "MINICUP 21: GROUP A starts in just 5 minutes!",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6972",
-   "url": "https://t.me/escapefromtarkovEN/6972",
-   "date": "2026-11-07T15:00:40+00:00",
-   "title": "Twitch Drops are live — tune in to streams and claim your rewards!",
    "codes": []
   }
  ]
