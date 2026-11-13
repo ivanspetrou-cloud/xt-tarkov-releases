@@ -1,8 +1,15 @@
 {
- "t": 1794516423613,
+ "t": 1794569443697,
  "channel": "metadvij",
  "name": "Тарковское Метадвижение",
  "posts": [
+  {
+   "id": "metadvij/5311",
+   "url": "https://t.me/metadvij/5311",
+   "date": "2026-11-13T11:08:28+00:00",
+   "title": "Новый внутриигровой опрос",
+   "codes": []
+  },
   {
    "id": "metadvij/5310",
    "url": "https://t.me/metadvij/5310",
@@ -99,41 +106,6 @@
    "url": "https://t.me/metadvij/5298",
    "date": "2026-11-04T19:26:01+00:00",
    "title": "Спасибо, берём",
-   "codes": []
-  },
-  {
-   "id": "metadvij/5297",
-   "url": "https://t.me/metadvij/5297",
-   "date": "2026-11-04T18:51:19+00:00",
-   "title": "Предзаказы на Fragmentary Order открыты",
-   "codes": []
-  },
-  {
-   "id": "metadvij/5296",
-   "url": "https://t.me/metadvij/5296",
-   "date": "2026-11-04T18:39:33+00:00",
-   "title": "ФРАГМЕНТАРНАЯ БОМБА: 14-минутный геймплей Fragmentary Order",
-   "codes": []
-  },
-  {
-   "id": "metadvij/5295",
-   "url": "https://t.me/metadvij/5295",
-   "date": "2026-11-02T12:58:25+00:00",
-   "title": "Первый взгляд на обновлённые модификаторы",
-   "codes": []
-  },
-  {
-   "id": "metadvij/5294",
-   "url": "https://t.me/metadvij/5294",
-   "date": "2026-11-01T14:03:13+00:00",
-   "title": "Внезапно захотелось узнать ваше мнение насчёт хэллоуинского ивента в этом году",
-   "codes": []
-  },
-  {
-   "id": "metadvij/5290",
-   "url": "https://t.me/metadvij/5290",
-   "date": "2026-11-01T08:56:11+00:00",
-   "title": "Пачка скриншотов End of Line",
    "codes": []
   }
  ]
