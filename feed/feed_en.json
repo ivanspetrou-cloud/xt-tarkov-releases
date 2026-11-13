@@ -1,8 +1,15 @@
 {
- "t": 1794569443879,
+ "t": 1794588913472,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/6992",
+   "url": "https://t.me/escapefromtarkovEN/6992",
+   "date": "2026-11-13T16:49:24+00:00",
+   "title": "Balance adjustments have been made in #EscapefromTarkov:",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/6991",
    "url": "https://t.me/escapefromtarkovEN/6991",
@@ -127,13 +134,6 @@
    "url": "https://t.me/escapefromtarkovEN/6972",
    "date": "2026-11-07T15:00:40+00:00",
    "title": "Twitch Drops are live — tune in to streams and claim your rewards!",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6971",
-   "url": "https://t.me/escapefromtarkovEN/6971",
-   "date": "2026-11-06T18:13:07+00:00",
-   "title": "We're back in action with MINICUP 21!",
    "codes": []
   }
  ]

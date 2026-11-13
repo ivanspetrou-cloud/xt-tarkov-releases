@@ -1,8 +1,15 @@
 {
- "t": 1794569443697,
+ "t": 1794588913297,
  "channel": "metadvij",
  "name": "Тарковское Метадвижение",
  "posts": [
+  {
+   "id": "metadvij/5318",
+   "url": "https://t.me/metadvij/5318",
+   "date": "2026-11-13T16:50:01+00:00",
+   "title": "Внесены балансировочные правки в #EscapefromTarkov:",
+   "codes": []
+  },
   {
    "id": "metadvij/5311",
    "url": "https://t.me/metadvij/5311",
@@ -99,13 +106,6 @@
    "url": "https://t.me/metadvij/5299",
    "date": "2026-11-05T08:44:52+00:00",
    "title": "BREAKING: Escape from Tarkov и Fragmentary Order находятся в одной вселенной",
-   "codes": []
-  },
-  {
-   "id": "metadvij/5298",
-   "url": "https://t.me/metadvij/5298",
-   "date": "2026-11-04T19:26:01+00:00",
-   "title": "Спасибо, берём",
    "codes": []
   }
  ]
