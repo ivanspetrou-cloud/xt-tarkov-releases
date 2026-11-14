@@ -26,9 +26,11 @@ function tgParse(html) {
     // а код ищем только в постах про саму игру (12.11.2026: в ленту попал код скидки на ключи Fragmentary Order)
     const ad = /GGSel|Playerok|Plati\.?market|скидк|при покупке|ключ[иа]? активации|#реклама|\berid\b|discount|sponsored/i.test(txt);
     const game = /Тарков|Tarkov|\bEFT\b|\bPvE\b|\bPvP\b|Battlestate|\bBSG\b|лаунчер|launcher/i.test(txt);
+    // режим из текста поста, если у строки кода его нет (14.11.2026: «9GAG» - «Добротный подгон только для PvE-режима»)
+    const mh = /только\s+(?:для|в)\s+(PvE|PvP)|\b(PvE|PvP)[-\s]?(?:only|режим)/i.exec(txt), modeHint = mh ? ((mh[1] || mh[2]).toLowerCase() === 'pve' ? 'PvE' : 'PvP') : '';
     if (!ad && game && /промо ?код|promo ?code|\bcode\b|redeem/i.test(txt)) for (const ln of lines) {
-      const c = /^(?:🎁|🎉|🔑|▪️|•|-)?\s*([A-Z0-9][A-Z0-9_-]{4,30})\b\s*(?:[—–-]\s*(.+))?$/u.exec(ln.replace(/^🎁\s*/u, ''));
-      if (c && okCode(c[1])) codes.push({ code: c[1], note: (c[2] || '').slice(0, 60) });
+      const c = /^(?:🎁|🎉|🔑|▪️|•|-)?\s*([A-Z0-9][A-Z0-9_-]{3,30})\b\s*(?:[—–-]\s*(.+))?$/u.exec(ln.replace(/^🎁\s*/u, ''));
+      if (c && okCode(c[1])) codes.push({ code: c[1], note: (c[2] || modeHint).slice(0, 60) });
       else for (const k of ln.matchAll(/(?:promo ?code|\bcode|redeem|промо ?код)\s*[:\-—–]?\s*[«"“']?([A-Z0-9][A-Z0-9_-]{4,30})\b/giu))
         if (okCode(k[1]) && k[1] === k[1].toUpperCase()) codes.push({ code: k[1], note: (/\b(PvE|PvP)\b/i.exec(ln) || [''])[0] });
     }
