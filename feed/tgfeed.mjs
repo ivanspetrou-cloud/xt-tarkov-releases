@@ -11,7 +11,7 @@ const CHANNELS = [
 function tgParse(html) {
   const dec = s => s.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, '').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ').replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n)).replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16))).replace(/&amp;/g, '&');
   const posts = [];
-  const re = /data-post="([^"]+)"[\s\S]*?<div class="tgme_widget_message_text[^"]*"[^>]*>([\s\S]*?)<\/div>[\s\S]*?<time datetime="([^"]+)"/g;
+  const re = /data-post="([^"]+)"[\s\S]*?<div class="tgme_widget_message_text(?![^"]*reply)[^"]*"[^>]*>([\s\S]*?)<\/div>[\s\S]*?<time datetime="([^"]+)"/g;
   let m;
   while ((m = re.exec(html))) {
     const txt = dec(m[2]).trim(), lines = txt.split('\n').map(s => s.trim()).filter(Boolean);
@@ -29,7 +29,8 @@ function tgParse(html) {
     // режим из текста поста, если у строки кода его нет (14.11.2026: «9GAG» - «Добротный подгон только для PvE-режима»)
     const mh = /только\s+(?:для|в)\s+(PvE|PvP)|\b(PvE|PvP)[-\s]?(?:only|режим)/i.exec(txt), modeHint = mh ? ((mh[1] || mh[2]).toLowerCase() === 'pve' ? 'PvE' : 'PvP') : '';
     if (!ad && game && /промо ?код|promo ?code|\bcode\b|redeem/i.test(txt)) for (const ln of lines) {
-      const c = /^(?:🎁|🎉|🔑|▪️|•|-)?\s*([A-Z0-9][A-Z0-9_-]{3,30})\b\s*(?:[—–-]\s*(.+))?$/u.exec(ln.replace(/^🎁\s*/u, ''));
+      // перед кодом любой значок (15.11.2026: «🪙 1YEAROFESCAPING» - раньше знали только 🎁 🎉 🔑)
+      const c = /^([A-Z0-9][A-Z0-9_-]{3,30})\b\s*(?:[—–-]\s*(.+))?$/u.exec(ln.replace(/^[^\p{L}\p{N}]+/u, ''));
       if (c && okCode(c[1])) codes.push({ code: c[1], note: (c[2] || modeHint).slice(0, 60) });
       else for (const k of ln.matchAll(/(?:promo ?code|\bcode|redeem|промо ?код)\s*[:\-—–]?\s*[«"“']?([A-Z0-9][A-Z0-9_-]{4,30})\b/giu))
         if (okCode(k[1]) && k[1] === k[1].toUpperCase()) codes.push({ code: k[1], note: (/\b(PvE|PvP)\b/i.exec(ln) || [''])[0] });
