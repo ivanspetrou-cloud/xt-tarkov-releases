@@ -1,8 +1,22 @@
 {
- "t": 1794830896266,
+ "t": 1794843427740,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/7000",
+   "url": "https://t.me/escapefromtarkovEN/7000",
+   "date": "2026-11-16T15:07:13+00:00",
+   "title": "Word has it that everyone on the other side of the world is going crazy over palm trees, neon lights, and…",
+   "codes": []
+  },
+  {
+   "id": "escapefromtarkovEN/6998",
+   "url": "https://t.me/escapefromtarkovEN/6998",
+   "date": "2026-11-16T13:01:47+00:00",
+   "title": "It’s already been a year since the release of #EscapefromTarkov, an experience unlike anything else.",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/6997",
    "url": "https://t.me/escapefromtarkovEN/6997",
@@ -113,27 +127,6 @@
    "url": "https://t.me/escapefromtarkovEN/6980",
    "date": "2026-11-10T15:00:42+00:00",
    "title": "EscapefromTarkov",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6979",
-   "url": "https://t.me/escapefromtarkovEN/6979",
-   "date": "2026-11-10T13:01:07+00:00",
-   "title": "It has been some time since the release of the first developer diary on anticheat improvements and our…",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6978",
-   "url": "https://t.me/escapefromtarkovEN/6978",
-   "date": "2026-11-10T11:00:08+00:00",
-   "title": "We have installed a technical update for #TarkovArena.",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6977",
-   "url": "https://t.me/escapefromtarkovEN/6977",
-   "date": "2026-11-09T07:54:59+00:00",
-   "title": "And the GROUP B winners are…",
    "codes": []
   }
  ]
