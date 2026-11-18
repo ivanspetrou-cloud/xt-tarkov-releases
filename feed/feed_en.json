@@ -1,8 +1,15 @@
 {
- "t": 1795003362091,
+ "t": 1795012248810,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/7002",
+   "url": "https://t.me/escapefromtarkovEN/7002",
+   "date": "2026-11-18T14:00:08+00:00",
+   "title": "In the new episode of the \"Developer's Diary\", we'll talk about the update 1.3.5.0, scheduled for release…",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/7001",
    "url": "https://t.me/escapefromtarkovEN/7001",
@@ -120,13 +127,6 @@
    "url": "https://t.me/escapefromtarkovEN/6982",
    "date": "2026-11-10T17:33:38+00:00",
    "title": "EscapefromTarkov",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6981",
-   "url": "https://t.me/escapefromtarkovEN/6981",
-   "date": "2026-11-10T15:53:17+00:00",
-   "title": "With update 0.6.2.5, we made changes to the respawn system in Last Hero mode in #TarkovArena, and we want…",
    "codes": []
   }
  ]
