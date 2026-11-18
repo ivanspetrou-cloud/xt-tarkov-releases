@@ -1,8 +1,15 @@
 {
- "t": 1794843427740,
+ "t": 1795003362091,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/7001",
+   "url": "https://t.me/escapefromtarkovEN/7001",
+   "date": "2026-11-18T11:07:12+00:00",
+   "title": "How was Terminal created — the location that finally lets you escape from Tarkov?",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/7000",
    "url": "https://t.me/escapefromtarkovEN/7000",
@@ -120,13 +127,6 @@
    "url": "https://t.me/escapefromtarkovEN/6981",
    "date": "2026-11-10T15:53:17+00:00",
    "title": "With update 0.6.2.5, we made changes to the respawn system in Last Hero mode in #TarkovArena, and we want…",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6980",
-   "url": "https://t.me/escapefromtarkovEN/6980",
-   "date": "2026-11-10T15:00:42+00:00",
-   "title": "EscapefromTarkov",
    "codes": []
   }
  ]
