@@ -1,8 +1,15 @@
 {
- "t": 1795091640481,
+ "t": 1795103967098,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/7004",
+   "url": "https://t.me/escapefromtarkovEN/7004",
+   "date": "2026-11-19T15:01:26+00:00",
+   "title": "The getaway Twitch Drops continue - don't miss your chance to add some East Coast style to your PMC's…",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/7003",
    "url": "https://t.me/escapefromtarkovEN/7003",
@@ -127,13 +134,6 @@
    "url": "https://t.me/escapefromtarkovEN/6984",
    "date": "2026-11-11T07:34:07+00:00",
    "title": "We have installed a technical update for #EscapefromTarkov.",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6983",
-   "url": "https://t.me/escapefromtarkovEN/6983",
-   "date": "2026-11-10T17:33:38+00:00",
-   "title": "EscapefromTarkov",
    "codes": []
   }
  ]
