@@ -1,11 +1,13 @@
 // Зеркало открытых веб-версий каналов для тех, у кого Telegram заблокирован:
-//   «Тарковское Метадвижение» (t.me/s/metadvij) → feed/feed.json — русская версия оверлея XT;
+//   «Тарковское Метадвижение» (t.me/s/metadvij) → feed/feed.json — промокоды (в старых версиях оверлея — и новости);
+//   «Escape from Tarkov | Официальный канал» (t.me/s/escapefromtarkovRU, официальный канал BSG) → feed/feed_ru.json — новости русской версии;
 //   «Escape from Tarkov Official» (t.me/s/escapefromtarkovEN, официальный канал BSG) → feed/feed_en.json — английская версия.
 // Берётся только то, что оверлей XT и так показывает: заголовок поста, дата, ссылка, промокоды. Запускает .github/workflows/tgfeed.yml.
 // Разбор — копия tgParse из app/main.js оверлея: поменяли там — поменять и здесь.
 import fs from 'node:fs';
 const CHANNELS = [
   { channel: 'metadvij', name: 'Тарковское Метадвижение', out: 'feed/feed.json', q: 'промокод' },
+  { channel: 'escapefromtarkovRU', name: 'Escape from Tarkov | Официальный канал', out: 'feed/feed_ru.json' },
   { channel: 'escapefromtarkovEN', name: 'Escape from Tarkov Official', out: 'feed/feed_en.json', q: 'promo code' }
 ];
 function tgParse(html) {
