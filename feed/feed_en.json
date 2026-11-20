@@ -1,8 +1,15 @@
 {
- "t": 1795103967098,
+ "t": 1795180309017,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/7005",
+   "url": "https://t.me/escapefromtarkovEN/7005",
+   "date": "2026-11-20T12:55:24+00:00",
+   "title": "An in-game event has started in the Seasonal mode of #EscapefromTarkov.",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/7004",
    "url": "https://t.me/escapefromtarkovEN/7004",
@@ -127,13 +134,6 @@
    "url": "https://t.me/escapefromtarkovEN/6985",
    "date": "2026-11-11T14:00:45+00:00",
    "title": "The Kord Breach season will conclude on December 7.",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6984",
-   "url": "https://t.me/escapefromtarkovEN/6984",
-   "date": "2026-11-11T07:34:07+00:00",
-   "title": "We have installed a technical update for #EscapefromTarkov.",
    "codes": []
   }
  ]
