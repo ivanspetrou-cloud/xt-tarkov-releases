@@ -1,8 +1,15 @@
 {
- "t": 1795185798016,
+ "t": 1795439941644,
  "channel": "escapefromtarkovRU",
  "name": "Escape from Tarkov | Официальный канал",
  "posts": [
+  {
+   "id": "escapefromtarkovRU/7308",
+   "url": "https://t.me/escapefromtarkovRU/7308",
+   "date": "2026-11-23T13:02:52+00:00",
+   "title": "Новые варианты внешности ЧВК в наградах Боевого Пропуска #UNTARControl.",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovRU/7307",
    "url": "https://t.me/escapefromtarkovRU/7307",
@@ -120,20 +127,6 @@
    "url": "https://t.me/escapefromtarkovRU/7289",
    "date": "2026-11-11T14:00:41+00:00",
    "title": "Сезон Kord Breach завершится 7 декабря.",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovRU/7288",
-   "url": "https://t.me/escapefromtarkovRU/7288",
-   "date": "2026-11-11T07:34:03+00:00",
-   "title": "Мы установили техническое обновление для #EscapefromTarkov.",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovRU/7287",
-   "url": "https://t.me/escapefromtarkovRU/7287",
-   "date": "2026-11-10T17:33:34+00:00",
-   "title": "EscapefromTarkov",
    "codes": []
   }
  ]

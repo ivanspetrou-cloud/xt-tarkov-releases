@@ -1,8 +1,15 @@
 {
- "t": 1795180309017,
+ "t": 1795439942000,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/7006",
+   "url": "https://t.me/escapefromtarkovEN/7006",
+   "date": "2026-11-23T13:02:56+00:00",
+   "title": "New PMC appearance options in the #UNTARControl Battle Pass rewards.",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/7005",
    "url": "https://t.me/escapefromtarkovEN/7005",
@@ -120,20 +127,6 @@
    "url": "https://t.me/escapefromtarkovEN/6987",
    "date": "2026-11-12T13:03:19+00:00",
    "title": "UNTAR Control - the second season in #EscapefromTarkov.",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6986",
-   "url": "https://t.me/escapefromtarkovEN/6986",
-   "date": "2026-11-11T15:07:52+00:00",
-   "title": "EscapefromTarkov",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6985",
-   "url": "https://t.me/escapefromtarkovEN/6985",
-   "date": "2026-11-11T14:00:45+00:00",
-   "title": "The Kord Breach season will conclude on December 7.",
    "codes": []
   }
  ]
