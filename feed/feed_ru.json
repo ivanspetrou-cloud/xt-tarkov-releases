@@ -1,8 +1,15 @@
 {
- "t": 1795439941644,
+ "t": 1795455022339,
  "channel": "escapefromtarkovRU",
  "name": "Escape from Tarkov | Официальный канал",
  "posts": [
+  {
+   "id": "escapefromtarkovRU/7310",
+   "url": "https://t.me/escapefromtarkovRU/7310",
+   "date": "2026-11-23T17:16:33+00:00",
+   "title": "Завтра, 24 ноября, в 10:00 МСК мы планируем установку обновления 1.3.5.0 для #EscapefromTarkov.",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovRU/7308",
    "url": "https://t.me/escapefromtarkovRU/7308",
@@ -120,13 +127,6 @@
    "url": "https://t.me/escapefromtarkovRU/7290",
    "date": "2026-11-11T15:07:47+00:00",
    "title": "EscapefromTarkov",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovRU/7289",
-   "url": "https://t.me/escapefromtarkovRU/7289",
-   "date": "2026-11-11T14:00:41+00:00",
-   "title": "Сезон Kord Breach завершится 7 декабря.",
    "codes": []
   }
  ]

@@ -1,8 +1,15 @@
 {
- "t": 1795439942000,
+ "t": 1795455022799,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/7008",
+   "url": "https://t.me/escapefromtarkovEN/7008",
+   "date": "2026-11-23T17:16:27+00:00",
+   "title": "Tomorrow, November 24 at 7:00 AM GMT / 3:00 AM EDT, we are planning to install patch 1.3.5.0 for…",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/7006",
    "url": "https://t.me/escapefromtarkovEN/7006",
@@ -120,13 +127,6 @@
    "url": "https://t.me/escapefromtarkovEN/6988",
    "date": "2026-11-12T15:01:17+00:00",
    "title": "In the fourth episode of DEV STORIES, we'll explore how #EscapefromTarkov has evolved thanks to its…",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6987",
-   "url": "https://t.me/escapefromtarkovEN/6987",
-   "date": "2026-11-12T13:03:19+00:00",
-   "title": "UNTAR Control - the second season in #EscapefromTarkov.",
    "codes": []
   }
  ]
