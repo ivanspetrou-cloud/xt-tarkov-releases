@@ -1,8 +1,15 @@
 {
- "t": 1795519706383,
+ "t": 1795523753374,
  "channel": "escapefromtarkovRU",
  "name": "Escape from Tarkov | Официальный канал",
  "posts": [
+  {
+   "id": "escapefromtarkovRU/7314",
+   "url": "https://t.me/escapefromtarkovRU/7314",
+   "date": "2026-11-24T12:31:15+00:00",
+   "title": "Установка обновления 1.3.5.0 в #EscapefromTarkov завершена.",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovRU/7312",
    "url": "https://t.me/escapefromtarkovRU/7312",
@@ -113,13 +120,6 @@
    "url": "https://t.me/escapefromtarkovRU/7295",
    "date": "2026-11-13T11:00:43+00:00",
    "title": "Игрокам #EscapefromTarkov доступен новый внутриигровой опрос, посвященный программе Боевого слаживания.",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovRU/7294",
-   "url": "https://t.me/escapefromtarkovRU/7294",
-   "date": "2026-11-12T17:44:41+00:00",
-   "title": "Если вы ещё не выполнили цепочку заданий сезона Kord Breach — пора это сделать.",
    "codes": []
   }
  ]

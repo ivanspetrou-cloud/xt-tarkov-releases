@@ -1,8 +1,15 @@
 {
- "t": 1795519706851,
+ "t": 1795523753753,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/7012",
+   "url": "https://t.me/escapefromtarkovEN/7012",
+   "date": "2026-11-24T12:31:24+00:00",
+   "title": "The installation of patch 1.3.5.0 in #EscapefromTarkov is complete.",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/7010",
    "url": "https://t.me/escapefromtarkovEN/7010",
@@ -113,13 +120,6 @@
    "url": "https://t.me/escapefromtarkovEN/6993",
    "date": "2026-11-13T17:23:41+00:00",
    "title": "The release anniversary of Escape from Tarkov is approaching!",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6992",
-   "url": "https://t.me/escapefromtarkovEN/6992",
-   "date": "2026-11-13T16:49:24+00:00",
-   "title": "Balance adjustments have been made in #EscapefromTarkov:",
    "codes": []
   }
  ]
