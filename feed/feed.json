@@ -1,8 +1,15 @@
 {
- "t": 1795523753074,
+ "t": 1795532512589,
  "channel": "metadvij",
  "name": "Тарковское Метадвижение",
  "posts": [
+  {
+   "id": "metadvij/5360",
+   "url": "https://t.me/metadvij/5360",
+   "date": "2026-11-24T14:25:02+00:00",
+   "title": "Тест оптимизации Таркова на Unity 6",
+   "codes": []
+  },
   {
    "id": "metadvij/5359",
    "url": "https://t.me/metadvij/5359",
