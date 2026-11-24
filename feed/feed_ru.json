@@ -1,8 +1,15 @@
 {
- "t": 1795504674095,
+ "t": 1795519706383,
  "channel": "escapefromtarkovRU",
  "name": "Escape from Tarkov | Официальный канал",
  "posts": [
+  {
+   "id": "escapefromtarkovRU/7312",
+   "url": "https://t.me/escapefromtarkovRU/7312",
+   "date": "2026-11-24T10:30:21+00:00",
+   "title": "Вспышку заражения удалось подавить.",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovRU/7311",
    "url": "https://t.me/escapefromtarkovRU/7311",
@@ -113,20 +120,6 @@
    "url": "https://t.me/escapefromtarkovRU/7294",
    "date": "2026-11-12T17:44:41+00:00",
    "title": "Если вы ещё не выполнили цепочку заданий сезона Kord Breach — пора это сделать.",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovRU/7292",
-   "url": "https://t.me/escapefromtarkovRU/7292",
-   "date": "2026-11-12T15:01:13+00:00",
-   "title": "В четвертом эпизоде мы расскажем, как #EscapefromTarkov развивалась благодаря своему сообществу на…",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovRU/7291",
-   "url": "https://t.me/escapefromtarkovRU/7291",
-   "date": "2026-11-12T13:03:13+00:00",
-   "title": "UNTAR Control — второй сезон в #EscapefromTarkov.",
    "codes": []
   }
  ]

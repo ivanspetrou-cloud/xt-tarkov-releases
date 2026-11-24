@@ -1,8 +1,15 @@
 {
- "t": 1795504674590,
+ "t": 1795519706851,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/7010",
+   "url": "https://t.me/escapefromtarkovEN/7010",
+   "date": "2026-11-24T10:30:26+00:00",
+   "title": "The outbreak has been contained.",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/7009",
    "url": "https://t.me/escapefromtarkovEN/7009",
@@ -113,20 +120,6 @@
    "url": "https://t.me/escapefromtarkovEN/6992",
    "date": "2026-11-13T16:49:24+00:00",
    "title": "Balance adjustments have been made in #EscapefromTarkov:",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6991",
-   "url": "https://t.me/escapefromtarkovEN/6991",
-   "date": "2026-11-13T11:00:47+00:00",
-   "title": "A new in-game survey is now available for #EscapefromTarkov players, focused on the EXFIL Brothers Program.",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6990",
-   "url": "https://t.me/escapefromtarkovEN/6990",
-   "date": "2026-11-12T17:44:46+00:00",
-   "title": "If you haven’t completed the Kord Breach task line yet, now is the time.",
    "codes": []
   }
  ]
