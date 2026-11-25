@@ -1,8 +1,15 @@
 {
- "t": 1795602945134,
+ "t": 1795610521107,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/7014",
+   "url": "https://t.me/escapefromtarkovEN/7014",
+   "date": "2026-11-25T12:00:59+00:00",
+   "title": "Nominations for the 2026 Steam Awards are now open!",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/7013",
    "url": "https://t.me/escapefromtarkovEN/7013",
@@ -113,13 +120,6 @@
    "url": "https://t.me/escapefromtarkovEN/6995",
    "date": "2026-11-13T20:33:33+00:00",
    "title": "MINICUP 21 PLAYOFFS ARE TOMORROW!",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6994",
-   "url": "https://t.me/escapefromtarkovEN/6994",
-   "date": "2026-11-13T19:27:22+00:00",
-   "title": "We have installed a technical update for #EscapefromTarkov.",
    "codes": []
   }
  ]
