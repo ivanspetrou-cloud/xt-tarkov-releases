@@ -1,8 +1,15 @@
 {
- "t": 1795523753753,
+ "t": 1795602945134,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/7013",
+   "url": "https://t.me/escapefromtarkovEN/7013",
+   "date": "2026-11-25T10:31:52+00:00",
+   "title": "Fairer Matchmaking in Escape from Tarkov: Arena",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/7012",
    "url": "https://t.me/escapefromtarkovEN/7012",
@@ -113,13 +120,6 @@
    "url": "https://t.me/escapefromtarkovEN/6994",
    "date": "2026-11-13T19:27:22+00:00",
    "title": "We have installed a technical update for #EscapefromTarkov.",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6993",
-   "url": "https://t.me/escapefromtarkovEN/6993",
-   "date": "2026-11-13T17:23:41+00:00",
-   "title": "The release anniversary of Escape from Tarkov is approaching!",
    "codes": []
   }
  ]
