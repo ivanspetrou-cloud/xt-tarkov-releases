@@ -1,8 +1,15 @@
 {
- "t": 1795696673191,
+ "t": 1795707351609,
  "channel": "escapefromtarkovRU",
  "name": "Escape from Tarkov | Официальный канал",
  "posts": [
+  {
+   "id": "escapefromtarkovRU/7319",
+   "url": "https://t.me/escapefromtarkovRU/7319",
+   "date": "2026-11-26T15:02:47+00:00",
+   "title": "28 ноября в 18:00 МСК турнир Golden Coin 2 возвращается в #EscapefromTarkov!",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovRU/7318",
    "url": "https://t.me/escapefromtarkovRU/7318",
@@ -113,13 +120,6 @@
    "url": "https://t.me/escapefromtarkovRU/7300",
    "date": "2026-11-16T11:00:59+00:00",
    "title": "Борьба со вспышкой неизвестного вируса продолжается.",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovRU/7299",
-   "url": "https://t.me/escapefromtarkovRU/7299",
-   "date": "2026-11-15T16:00:09+00:00",
-   "title": "15 ноября — ровно год с релиза #EscapefromTarkov!",
    "codes": []
   }
  ]

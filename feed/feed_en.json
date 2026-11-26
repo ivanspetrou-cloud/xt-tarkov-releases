@@ -1,8 +1,15 @@
 {
- "t": 1795696673671,
+ "t": 1795707351983,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/7016",
+   "url": "https://t.me/escapefromtarkovEN/7016",
+   "date": "2026-11-26T15:02:51+00:00",
+   "title": "On November 28 at 3:00 PM GMT / 10:00 AM EST, the Golden Coin 2 event returns to #EscapefromTarkov!",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/7015",
    "url": "https://t.me/escapefromtarkovEN/7015",
@@ -113,13 +120,6 @@
    "url": "https://t.me/escapefromtarkovEN/6997",
    "date": "2026-11-16T11:01:04+00:00",
    "title": "The fight to contain the unknown virus outbreak goes on.",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6996",
-   "url": "https://t.me/escapefromtarkovEN/6996",
-   "date": "2026-11-15T16:00:04+00:00",
-   "title": "November 15 marks exactly one year since #EscapefromTarkov release!",
    "codes": []
   }
  ]
