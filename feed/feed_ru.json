@@ -1,8 +1,15 @@
 {
- "t": 1795707351609,
+ "t": 1795782861592,
  "channel": "escapefromtarkovRU",
  "name": "Escape from Tarkov | Официальный канал",
  "posts": [
+  {
+   "id": "escapefromtarkovRU/7320",
+   "url": "https://t.me/escapefromtarkovRU/7320",
+   "date": "2026-11-27T11:51:41+00:00",
+   "title": "Мы установили техническое обновление для #EscapefromTarkov.",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovRU/7319",
    "url": "https://t.me/escapefromtarkovRU/7319",
@@ -113,13 +120,6 @@
    "url": "https://t.me/escapefromtarkovRU/7301",
    "date": "2026-11-16T13:01:43+00:00",
    "title": "Прошёл уже год с момента релиза #EscapefromTarkov — игры, не похожей ни на что другое.",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovRU/7300",
-   "url": "https://t.me/escapefromtarkovRU/7300",
-   "date": "2026-11-16T11:00:59+00:00",
-   "title": "Борьба со вспышкой неизвестного вируса продолжается.",
    "codes": []
   }
  ]
