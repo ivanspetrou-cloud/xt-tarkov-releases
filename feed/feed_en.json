@@ -1,8 +1,15 @@
 {
- "t": 1795791447941,
+ "t": 1795795392928,
  "channel": "escapefromtarkovEN",
  "name": "Escape from Tarkov Official",
  "posts": [
+  {
+   "id": "escapefromtarkovEN/7019",
+   "url": "https://t.me/escapefromtarkovEN/7019",
+   "date": "2026-11-27T16:01:59+00:00",
+   "title": "Black Friday has begun!",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovEN/7018",
    "url": "https://t.me/escapefromtarkovEN/7018",
@@ -120,13 +127,6 @@
    "url": "https://t.me/escapefromtarkovEN/7000",
    "date": "2026-11-16T15:07:13+00:00",
    "title": "Word has it that everyone on the other side of the world is going crazy over palm trees, neon lights, and…",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovEN/6998",
-   "url": "https://t.me/escapefromtarkovEN/6998",
-   "date": "2026-11-16T13:01:47+00:00",
-   "title": "It’s already been a year since the release of #EscapefromTarkov, an experience unlike anything else.",
    "codes": []
   }
  ]

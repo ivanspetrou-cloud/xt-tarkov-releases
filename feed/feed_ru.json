@@ -1,8 +1,15 @@
 {
- "t": 1795791447543,
+ "t": 1795795392484,
  "channel": "escapefromtarkovRU",
  "name": "Escape from Tarkov | Официальный канал",
  "posts": [
+  {
+   "id": "escapefromtarkovRU/7322",
+   "url": "https://t.me/escapefromtarkovRU/7322",
+   "date": "2026-11-27T16:02:06+00:00",
+   "title": "Стартовала чёрная пятница, и на официальном сайте вас ждут скидки до 20% на издания и расширения!",
+   "codes": []
+  },
   {
    "id": "escapefromtarkovRU/7321",
    "url": "https://t.me/escapefromtarkovRU/7321",
@@ -120,13 +127,6 @@
    "url": "https://t.me/escapefromtarkovRU/7303",
    "date": "2026-11-16T15:07:25+00:00",
    "title": "Говорят, на другом конце света сейчас все сходят с ума по пальмам, неону и солнечному побережью.",
-   "codes": []
-  },
-  {
-   "id": "escapefromtarkovRU/7301",
-   "url": "https://t.me/escapefromtarkovRU/7301",
-   "date": "2026-11-16T13:01:43+00:00",
-   "title": "Прошёл уже год с момента релиза #EscapefromTarkov — игры, не похожей ни на что другое.",
    "codes": []
   }
  ]
